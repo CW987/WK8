@@ -10,9 +10,19 @@ export default async function usersPage({ searchParams }) {
     console.log(wrangledData);
 
     const query = await searchParams;
-    if(query.sort === "desc") {
-        wrangledData.reverse();
+
+    if (query.sort === "desc") {
+        wrangledData.sort((a, b) => {
+           return b.lastName.localeCompare(a.lastName)
+        });
+    } 
+    
+    if (query.sort === "asc") {
+         wrangledData.sort((a, b) => {
+            return    a.lastName.localeCompare(b.lastName)
+        })
     }
+
     return (
         <>
         <h1>Users Page General</h1>
