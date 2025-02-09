@@ -2,7 +2,7 @@ export default function Footer() {
     return (
         <>
         <footer>
-            <h2>Footer for all pages</h2> //!Change me
+            <h6>Curtis WK8 Project</h6>
         </footer>
         </>
     )

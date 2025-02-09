@@ -9,7 +9,6 @@ export default async function Home() {
 
     return (
       <main>
-        <h1>Wolves</h1>
           {wrangledblogposts.map((post) => (
             <div key={post.id}>
               <h2>{post.title}</h2>

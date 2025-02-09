@@ -4,9 +4,9 @@ export default function Header() {
     return (
         <>
         <header>
-            <h1>App title for all pages</h1> //!Change me
+            <h1>Wolves!</h1>
             <nav>
-                <Link href={"/"}>Home</Link>
+                <Link href={"/"}>Home </Link>  
                 <Link href={"/about"}>About</Link>
             </nav>
         </header>
