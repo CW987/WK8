@@ -3,9 +3,9 @@ import { db } from "@/utils/dbConnection";
 export default async function Home() {
   try {
     const result = await db.query(`SELECT * FROM "blogposts"`);
-    console.log("Supabase response:", result);
+    // console.log("Supabase response:", result);
     const wrangledblogposts = result.rows;
-    console.log(wrangledblogposts)
+    // console.log(wrangledblogposts)
 
     return (
       <main>
