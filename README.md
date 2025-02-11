@@ -13,6 +13,8 @@ Optional
 •	What useful external sources helped you complete the assignment (e.g Youtube tutorials)?
 o	Next.js docs
 •	What errors or bugs did you encounter while completing your assignment? How did you solve them?
+- Used the following query when I was struggling to link to supabase.
+SELECT table_name FROM information_schema.tables WHERE table_schema = 'public';
 o	ChatGPT helped me debug the wrangled posts on the main app page. It suggested the error message code at the bottom after several failed tests. Mostly neither it nor me were spotting the one letter being in the wrong case. 
 •	What went really well and what could have gone better?
 o	Sorting the posts was fiddly at first but worked well
